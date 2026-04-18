@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Path | Perjalanan Fokusmu</title>
+    <style>
+        /* Gaya Dark-Grunge / Cyber */
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #ff97c3;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(235, 113, 144, 0.8);
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fd9ff1;
+            text-shadow: 0 0 10px #7b2ff7;
+        }
+
+        .nav-links a {
+            color: #f1acdd;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ec8fd5;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #f593ed 0%, #ffabcb 100%);
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            margin: 0;
+            letter-spacing: -2px;
+            text-shadow: 0 0 20px rgba(250, 250, 250, 0.932);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #fcb0e9;
+            max-width: 600px;
+            margin: 20px 0 40px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.4s;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background-color: #f38ad0;
+            color: white;
+            box-shadow: 0 0 15px rgba(252, 156, 208, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: #faa5d9;
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            border: 1px solid #444;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background: #f592cb;
+        }
+
+        /* Preview Section */
+        .preview {
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: #f59ac5;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #222;
+        }
+
+        .card h3 { color: #f7cce0; }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">FOCUS PATH</div>
+        <div class="nav-links">
+            <a href="login.php">Masuk</a>
+            <a href="registrasi.php" style="color: #ecacd9;">Daftar</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Temukan Jalanmu.</h1>
+        <p>Hentikan distraksi, mulai validasi progres diri. Ruang aman untuk fokus pada masa depan tanpa bayang-bayang masa lalu.</p>
+        
+        <div class="btn-group">
+            <a href="registrasi.php" class="btn btn-primary">Mulai Sekarang</a>
+            <a href="login.php" class="btn btn-secondary">Sudah Punya Akun</a>
+        </div>
+    </div>
+
+    <section class="preview">
+        <h2>Fitur Utama</h2>
+        <div class="feature-grid">
+            <div class="card">
+                <h3>Zen Mode</h3>
+                <p>Lingkungan kerja bersih tanpa iklan untuk fokus maksimal.</p>
+            </div>
+            <div class="card">
+                <h3>Glowing Path</h3>
+                <p>Lihat grafik pertumbuhanmu yang tervalidasi setiap hari.</p>
+            </div>
+            <div class="card">
+                <h3>Safe Space</h3>
+                <p>Kelola inner critic dan bangun rasa percaya diri kembali.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: #f384ea; border-top: 1px solid #222;">
+        &copy; 2026 Focus Path - SMK Telkom Sidoarjo
+    </footer>
+
+</body>
+</html>
